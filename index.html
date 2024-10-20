@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Tambahkan Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navbar">
+        <nav>
+            <ul>
+                <a href="#prof">Profile</a>
+                <a href="#tentang">Data Diri</a>
+                <a href="#pres">Prestasi</a>
+                <a href="#projek">Projek</a>
+                <a href="#riwayat">Riwayat Pendidikan</a>
+                <a href="#footer">Contact</a>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Profil -->
+    <section class="profile" id="prof">
+        <div class="profile-container">
+            <img src="Liburan Kintamani.jpg" alt="Profile Photo" class="profile-photo">
+            <h1 class="name">Rizal Kevin Pangestu Wijaya</h1>
+            <p class="motto">"Fokus pada proses, bukan hasil akhir."</p>
+        </div>
+    </section>
+
+    <!-- Data Diri -->
+    <section class="about" id="tentang">
+        <h2>Data Diri Saya</h2>
+        <p>Nama: Rizal Kevin Pangestu Wijaya</p>
+        <p>Umur: 16 tahun</p>
+        <p>Sekolah: SMK TI BALI GLOBAL DENPASAR</p>
+        <p>Keahlian: Web Development</p>
+    </section>
+
+    <!-- Prestasi -->
+    <section class="about" id="pres">
+        <h2>Prestasi</h2>
+        <p>1. Juara 1 Olimpiade Matematika saat SMP </p>
+    </section>
+
+    <!-- Projek Sebelumnya -->
+    <section class="projects" id="projek">
+        <h2>Beberapa Projek Sebelumnya</h2>
+        <div class="project-list">
+            <div class="project-item" onclick="showProjectDetail(1)">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi singkat tentang proyek 1.</p>
+            </div>
+            <div class="project-item" onclick="showProjectDetail(2)">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi singkat tentang proyek 2.</p>
+            </div>
+            <div class="project-item" onclick="showProjectDetail(3)">
+                <h3>Proyek 3</h3>
+                <p>Deskripsi singkat tentang proyek 3.</p>
+            </div>
+            <div class="project-item" onclick="showProjectDetail(4)">
+                <h3>Proyek 4</h3>
+                <p>Deskripsi singkat tentang proyek 4.</p>
+            </div>
+        </div>
+
+        <!-- Detail Proyek (Popup) -->
+        <div id="project-detail" class="project-detail">
+            <span id="close-btn" onclick="closeProjectDetail()">&times;</span>
+            <h3 id="project-title"></h3>
+            <br>
+            <p id="project-description"></p>
+            <br>
+            <a style="color: #fff;" id="project-link" href="#" target="_blank">Lihat Proyek</a>
+        </div>
+    </section>
+
+    <!-- Riwayat Pendidikan -->
+    <section class="education" id="riwayat">
+        <h2>Riwayat Pendidikan</h2>
+        <ul>
+            <li>Taman Kanak-Kanak: TK Aisyiyah Bustanul Athfal 2 Denpasar (2013-2014)</li>
+            <br>
+            <li>Sekolah Dasar: SD Muhammadiyah 2 Denpasar (2014-2020)</li>
+            <br>
+            <li>Sekolah Menengah Pertama: MTs Miftahul Ulum Denpasar (2020-2023)</li>
+            <br>
+            <li>Sekolah Menengah Kejuruan: SMK TI Bali Global Denpasar (2023-Sekarang)</li>
+        </ul>
+    </section>
+
+    <!-- Footer dengan Kontak -->
+    <footer id="footer">
+        <p>&copy; 2024 Rizal Kevin.</p>
+        <div class="contact-icons">
+            <a href="mailto:rizalkevinn28@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://discordapp.com/users/gabriela_abigail" target="_blank">
+                <i class="fab fa-discord"></i>
+            </a>
+            <a href="https://www.instagram.com/kevinlenatheaa?igsh=cWxlcWoydTY0MXFm" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
